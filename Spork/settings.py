@@ -11,10 +11,10 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'sporkdb',                      # Or path to database file if using sqlite3.
+        'USER': 'spork',                      # Not used with sqlite3.
+        'PASSWORD': 'sporkpass',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -27,7 +27,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/New_York'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -58,7 +58,7 @@ MEDIA_URL = ''
 ADMIN_MEDIA_PREFIX = '/media/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '!*31(!=wtatmg6xb^sgrpw_pm9)4^ib=6@vp)z4lzrrx#tz^k6'
+SECRET_KEY = 'uvrpc=a)+&u__pc7bbc--p)opy)@!$g^wgljmrprbdg9=phz99'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

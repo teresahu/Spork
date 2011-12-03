@@ -1,0 +1,151 @@
+div#navbar, div.spacer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#navbar {
+	background-color: #6fcc53;
+	border-radius: 15px;
+	padding: 10px 0;
+}
+
+div#navbar a{
+	color: #ffffff;
+}
+div#navbar a:hover{
+	color: #0b7e88;
+}
+
+div#navbar ul {
+	list-style: none;
+	display: block;
+	margin: 0 10px;
+}
+
+div#navbar ul li {
+	float: left;
+	margin: 0 1.5em;
+}
+
+div.spacer {
+	background-color: #6fcc53;
+	border-radius: 15px;
+	height: 1em;
+}
+
+div.topSection div {
+	border: solid 10px #0b7e88;
+	border-radius: 15px;
+	height: 280px;
+}
+
+div.topSection div p {
+	margin: 10px;
+}
+
+img#poster {
+	width: 360px;
+	height: 280px;
+}
+
+div#content {
+	background-color: #e5e5e5;
+	border-radius: 15px;
+}
+
+div#content div p{
+	margin: 5px;
+}
+
+div#footer {
+	clear:both;
+}
+
+div#footer ul{
+	list-style: none;
+	margin: 0 20px;
+}
+
+div#footer ul li{
+	margin: 10px auto;
+	display: inline;
+}
+/************************ Typography ***************/
+@font-face {
+	font-family: "DejaWeb";
+	src: url("fonts/DejaWeb.ttf")
+}
+
+@font-face {
+	font-family: "DejaWebBold";
+	src: url("fonts/DejaWeb-Bold.ttf")
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "DejaWebItalic";
+	src: url("fonts/DejaWeb-Italic.ttf")
+	font-style: italic;
+}
+
+body{
+	font-family: "DejaWeb", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body strong{
+	font-family: "DejaWebBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body em{
+	font-family: "DejaWebItalic", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+div#navbar ul li {
+	font: bold 1em;
+	color: #ffffff;
+}
+
+p {
+	font: .8em/1.4em;
+	margin: .2em 0;
+	line-height: 16px;
+}
+
+p#headlineText {
+	font: .9em/1.4em;
+	
+}
+
+div#footer li {
+	text-align:center;
+	font: bold;
+	font-size: .9em;
+}
+
+h1 {
+	color: #ff6600;
+	font: bold 1.5em;
+	margin: .2em 0;
+	text-align: center;
+}
+a {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:hover{
+	color: rgba(255, 102, 0, .75);
+}
+
+h2 { 
+	color: #ff6600;
+	font: bold 1.3em;
+	margin: .2em 0;
+	text-align: center;
+}
+
+/*
+ff6600 - orange
+0b7e88 - teal
+6fcc53 - green
+*/

@@ -12,12 +12,11 @@ div#navbar {
 div#navbar ul {
 	list-style: none;
 	display: inline;
-	margin: 0 10px;
 }
 
 div#navbar ul li {
-	float: left;
-	margin: 0 1.5em;
+	float: right;
+	margin: 0 20px;
 }
 
 div.spacer {
@@ -27,13 +26,20 @@ div.spacer {
 }
 
 div.topSection div {
-	border: solid 10px #0b7e88;
-	border-radius: 15px;
+	/*border: solid 10px #0b7e88;
+	border-radius: 15px;*/
 	height: 280px;
 }
 
 div.topSection div p {
 	margin: 10px;
+}
+
+div.topSection img {
+	margin: 0;
+	padding: 0;
+	height: 400px;
+	width: 960px;
 }
 
 img#poster {
@@ -104,6 +110,7 @@ div#navbar{
 div#navbar li{
 	font-weight: bold;
 	font-size: 1em;
+	padding: 15px 0px 0px 0px;
 }
 
 div#navbar a{
@@ -112,6 +119,11 @@ div#navbar a{
 
 div#navbar a:hover{
 	color: #0b7e88;
+}
+
+div#navbar img{
+	margin: 0px 5px;
+	width: 25px;
 }
 
 p {
@@ -129,6 +141,15 @@ div#footer li {
 	text-align: center;
 	font-size: .8em;
 	font-weight: bold;
+	padding: 10px 0;
+}
+
+div#footer a{
+	color: #000000;
+}
+
+div#footer a:hover{
+	color: #ff6600;
 }
 
 a {
@@ -159,12 +180,12 @@ h2 {
 
 div#logo{
 	padding: 15px 10px;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 div#logo1{
 	color: #ff6600;
-	font-weight: bold;
-	font-size: 2.5em;
 	margin: 0;
 	padding: 0;
 	display:inline;
@@ -173,10 +194,16 @@ div#logo1{
 div#logo2{
 	color: #000000;
 	text-decoration: none;
-	font-size: 2.5em;
 	margin: 0;
 	padding: 0;
 	display:inline;
+}
+
+div#tagline{
+	font-size: .3em;
+	padding: 8px 0px;
+	color: rgba(0, 0, 0, .5);
+	background-color: rgba(255,255,255,.01);
 }
 /*
 ff6600 - orange

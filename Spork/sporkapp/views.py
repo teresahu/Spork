@@ -1,7 +1,6 @@
-# Create your views here.
-<<<<<<< HEAD
+from django.template import Context, loader
+from django.http import HttpResponse
 
+# Create your views here.
 def home(request):
-    return HttpResponse(loader.get_template('home.html')
-=======
->>>>>>> 44fb5a8f08cbe1f12ffd0622a92e98efff2709f5
+    return HttpResponse(loader.get_template('home.html'))

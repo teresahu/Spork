@@ -18,9 +18,5 @@ urlpatterns = patterns('',
     url(r'^home/$', 'sporkapp.views.home'),
     url(r'^donations/$', 'sporkapp.views.donations'),
     url(r'^donation/d+/$', 'sporkapp.views.donation_details'),
-    url(r'^admin/$', include(admin.site.urls))
-<<<<<<< HEAD
-
-=======
->>>>>>> 037dde39bbe578b365c3bca2f2eb3247576b2e61
+    url(r'^admin/$', include('admin.site.urls'))
 )

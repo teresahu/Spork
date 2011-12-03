@@ -27,7 +27,11 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
+<<<<<<< HEAD
+TIME_ZONE = 'America/New_York'
+=======
 TIME_ZONE = 'America/Chicago'
+>>>>>>> 44fb5a8f08cbe1f12ffd0622a92e98efff2709f5
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -89,9 +93,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+<<<<<<< HEAD
+    # Uncomment the next line to enable the admin:
+    'django.contrib.admin'
+=======
     'sporkapp',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+>>>>>>> 44fb5a8f08cbe1f12ffd0622a92e98efff2709f5
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

@@ -141,6 +141,15 @@ div#footer li {
 	text-align: center;
 	font-size: .8em;
 	font-weight: bold;
+	padding: 10px 0;
+}
+
+div#footer a{
+	color: #000000;
+}
+
+div#footer a:hover{
+	color: #ff6600;
 }
 
 a {
@@ -171,12 +180,12 @@ h2 {
 
 div#logo{
 	padding: 15px 10px;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 div#logo1{
 	color: #ff6600;
-	font-weight: bold;
-	font-size: 2.5em;
 	margin: 0;
 	padding: 0;
 	display:inline;
@@ -185,10 +194,16 @@ div#logo1{
 div#logo2{
 	color: #000000;
 	text-decoration: none;
-	font-size: 2.5em;
 	margin: 0;
 	padding: 0;
 	display:inline;
+}
+
+div#tagline{
+	font-size: .3em;
+	padding: 8px 0px;
+	color: rgba(0, 0, 0, .5);
+	background-color: rgba(255,255,255,.01);
 }
 /*
 ff6600 - orange

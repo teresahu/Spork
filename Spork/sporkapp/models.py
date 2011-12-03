@@ -8,6 +8,8 @@ class Provider(models.Model):
     address = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=10)
     email = models.CharField(max_length=60)
+    def __unicode__(self):
+        return self.name
     
 class Receiver(models.Model):
     account_name = models.CharField(max_length=20)
@@ -15,6 +17,8 @@ class Receiver(models.Model):
     phone_number = models.CharField(max_length=10)
     email = models.CharField(max_length=60)
     ein = models.CharField(max_length=20)
+    def __unicode__(self):
+        return self.account_name
 
 class Donation(models.Model):
     DONATION_STATUS_CHOICES = (
@@ -31,3 +35,5 @@ class Donation(models.Model):
     donated_by = models.ForeignKey(Provider)
     claimed_by = models.ForeignKey(Receiver)
     time_claimed = models.DateTimeField()
+    def __unicode__(self):
+        return self.description

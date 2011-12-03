@@ -63,7 +63,7 @@ div#footer {
 
 div#footer ul{
 	list-style: none;
-	margin: 0 10px;
+	margin: 0 20px;
 }
 
 div#footer ul li{
@@ -71,30 +71,60 @@ div#footer ul li{
 	display: inline;
 }
 /************************ Typography ***************/
+@font-face {
+	font-family: "DejaWeb";
+	src: url("fonts/DejaWeb.ttf")
+}
+
+@font-face {
+	font-family: "DejaWebBold";
+	src: url("fonts/DejaWeb-Bold.ttf")
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "DejaWebItalic";
+	src: url("fonts/DejaWeb-Italic.ttf")
+	font-style: italic;
+}
+
+body{
+	font-family: "DejaWeb", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body strong{
+	font-family: "DejaWebBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body em{
+	font-family: "DejaWebItalic", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
 div#navbar ul li {
-	font: bold 1em Arial;
+	font: bold 1em;
 	color: #ffffff;
 }
 
 p {
-	font: .8em/1.4em Georgia;
+	font: .8em/1.4em;
 	margin: .2em 0;
+	line-height: 16px;
 }
 
 p#headlineText {
-	font: .9em/1.4em Georgia;
+	font: .9em/1.4em;
 	
 }
 
 div#footer li {
 	text-align:center;
-	font: bold .2em Arial;
+	font: bold;
+	font-size: .9em;
 }
 
 h1 {
 	color: #ff6600;
-	font: bold 1.5em Helvetica;
+	font: bold 1.5em;
 	margin: .2em 0;
 	text-align: center;
 }
@@ -103,9 +133,13 @@ a {
 	text-decoration: none;
 }
 
+a:hover{
+	color: rgba(255, 102, 0, .75);
+}
+
 h2 { 
 	color: #ff6600;
-	font: bold 1.3em Helvetica;
+	font: bold 1.3em;
 	margin: .2em 0;
 	text-align: center;
 }
@@ -113,5 +147,5 @@ h2 {
 /*
 ff6600 - orange
 0b7e88 - teal
-7b990c - green
+6fcc53 - green
 */

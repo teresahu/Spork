@@ -1,0 +1,117 @@
+div#navbar, div.spacer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#navbar {
+	background-color: #6fcc53;
+	border-radius: 15px;
+	padding: 10px 0;
+}
+
+div#navbar a{
+	color: #ffffff;
+}
+div#navbar a:hover{
+	color: #0b7e88;
+}
+
+div#navbar ul {
+	list-style: none;
+	display: block;
+	margin: 0 10px;
+}
+
+div#navbar ul li {
+	float: left;
+	margin: 0 1.5em;
+}
+
+div.spacer {
+	background-color: #6fcc53;
+	border-radius: 15px;
+	height: 1em;
+}
+
+div.topSection div {
+	border: solid 10px #0b7e88;
+	border-radius: 15px;
+	height: 280px;
+}
+
+div.topSection div p {
+	margin: 10px;
+}
+
+img#poster {
+	width: 360px;
+	height: 280px;
+}
+
+div#content {
+	background-color: #e5e5e5;
+	border-radius: 15px;
+}
+
+div#content div p{
+	margin: 5px;
+}
+
+div#footer {
+	clear:both;
+}
+
+div#footer ul{
+	list-style: none;
+	margin: 0 10px;
+}
+
+div#footer ul li{
+	margin: 10px auto;
+	display: inline;
+}
+/************************ Typography ***************/
+
+div#navbar ul li {
+	font: bold 1em Arial;
+	color: #ffffff;
+}
+
+p {
+	font: .8em/1.4em Georgia;
+	margin: .2em 0;
+}
+
+p#headlineText {
+	font: .9em/1.4em Georgia;
+	
+}
+
+div#footer li {
+	text-align:center;
+	font: bold .2em Arial;
+}
+
+h1 {
+	color: #ff6600;
+	font: bold 1.5em Helvetica;
+	margin: .2em 0;
+	text-align: center;
+}
+a {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+h2 { 
+	color: #ff6600;
+	font: bold 1.3em Helvetica;
+	margin: .2em 0;
+	text-align: center;
+}
+
+/*
+ff6600 - orange
+0b7e88 - teal
+7b990c - green
+*/

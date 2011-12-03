@@ -9,9 +9,9 @@
 	<meta name="viewport" 	content="width=device-width,initial-scale=1">
 	
 
-	<link rel="stylesheet" type="text/css" media="all" 	href="../media/css/reset.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="../media/css/960.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="../media/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="all" 	href="/media/css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/media/css/960.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/media/css/main.css" />
 </head>
 
 <body>
@@ -62,8 +62,13 @@
 	
 	<!-- Content Area-->
 	<div class="grid_8" id="content">
-		<h2><a href="#">Sample Article Title</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+		<h1>Why waste food when </h1>
+			
+			<form action='/create_donation' method='post'>
+			    {{ form.as_p }}
+			    <input type='submit' value='submit' />
+			</form>
+			
 	</div>
 	
 	<div class="grid_4" top_Section>

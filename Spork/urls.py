@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     url(r'^home/$', 'sporkapp.views.home'),
     url(r'^donations/$', 'sporkapp.views.donations'),
     url(r'^donation/d+/$', 'sporkapp.views.donation_details'),
-    url(r'^donations/new', 'sporkapp.views.create_donation'),
+    url(r'^donate', 'sporkapp.views.create_donation'),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root' : '/home/manvsmachine/Spork/Spork/sporkapp/media/'}),
     url(r'^admin/$', include(admin.site.urls))
 )

@@ -21,4 +21,4 @@ def create_donation(request):
             return render_to_response('donation_thanks.html')
     else:
         form = NewDonationForm()
-        return render_to_response('create_donation.html', {'form' : form})
+        return render_to_response('donate.html', {'form' : form})

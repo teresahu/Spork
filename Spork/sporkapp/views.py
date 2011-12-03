@@ -7,8 +7,8 @@ from sporkapp.forms import NewDonationForm
 
 # Create your views here.
 def home(request):
-    return render_to_response('home.html')
-   # return HttpResponse(loader.get_template('home.html'))
+    donations = Donation.objects.all()
+    return render_to_response('home.html', {'donations' : donations})
 
 def donation(request, donation_id):
     donation = Donation.objects.get(pk=donation_id)

@@ -27,6 +27,7 @@ class Donation(models.Model):
         (u'expired', u'expired')
     )
 
+    title = models.CharField(max_length=20)
     description = models.CharField(max_length=250)
     num_servings = models.IntegerField()
     expiration_time = models.IntegerField()

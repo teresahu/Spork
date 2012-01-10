@@ -1,120 +1,96 @@
 <!doctype html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>FAQs</title>
-	
-	<meta name="description" content="Home">
-	<meta name="author" content="Spork">
-	<meta name="viewport" 	content="width=device-width,initial-scale=1">
-	
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>FAQs</title>
+        
+        <meta name="description" content="Home">
+        <meta name="author" content="Spork">
+        <meta name="viewport" 	content="width=device-width,initial-scale=1">
+        
 
-	<link rel="stylesheet" type="text/css" media="all" 	href="/media/css/reset.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="/media/css/960.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="/media/css/main.css" />
-</head>
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/media/css/main.css" />
+    </head>
 
-<body>
-<div class="container_12">
-	<!--Header Div -->
-	<!--Logo Div-->
-	<div class="grid_12">
-		<div class="grid_5" id="logo">
-		<div id="logo1">Sp</div><div id="logo2">ork</div>
-		<div id="tagline">Where a good meal goes a long way</div>
-		</div>
-		<!--End Logo Div-->
-	
-	<!-- Navbar Div -->
-	
-		<div class="grid_6" id="navbar">
-			<img src="../media/images/icons/facebook.png">
-			<img src="../media/images/icons/twitter.png">
-			<img src="../media/images/icons/tumblr.png">
-			<img src="../media/images/icons/youtube.png">
-			<img src="../media/images/icons/flickr.png">
-			<br>
-			<ul>
-				<li><a href="/home">Home</a></li>
-				<li><a href="/donate">Donate</li>
-				<li><a href="/FAQ">FAQ</a></li>
-				<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-	</div>
-	<div class="clear">&nbsp;</div>
-	<!-- End Navbar Div-->
-	<!--End Header Div-->
-	
-	<!--Top Section-->
-	<div class="grid_12 topSection">
-		<img src="../media/images/header.jpg">
-	</div>
-	
-	<div class="clear">&nbsp;</div>
-	<!--End TopSection-->
-	
-	<!--Spacer-->
-	<div class="grid_12 spacer">
-	</div>
-	<div class="clear">&nbsp;</div>
-	<!--End Spacer-->
-	
-	<!-- Content Area-->
-	<div class="grid_8" id="content">
-		<h2><a href="#">Sample Article Title</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-	</div>
-	
-	<div class="grid_4" top_Section>
-		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-		<script>
-		new TWTR.Widget({
-		  version: 2,
-		  type: 'profile',
-		  rpp: 4,
-		  interval: 30000,
-		  width: 300,
-		  height: 340,
-		  theme: {
-		    shell: {
-		      background: '#0b7e88',
-		      color: '#ffffff'
-		    },
-		    tweets: {
-		      background: '#ffffff',
-		      color: '#000000',
-		      links: '#ff6600'
-		    }
-		  },
-		  features: {
-		    scrollbar: false,
-		    loop: false,
-		    live: false,
-		    behavior: 'all'
-		  }
-		}).render().setUser('rhokatl').start();
-		</script>
-	</div>
-	<div class="clear">&nbsp;</div>
-	<!--End Content Area-->
-	
-	<!--Spacer-->
-	<div class="grid_12 spacer">
-	</div>
-	<div class="clear">&nbsp;</div>
-	<!--End Spacer-->
-	
-<!--Footer-->
-<div class="grid_12" id="footer">
-	<ul>
-		<li>Copyright &copy; 2011 Spork</li>
-		<li><a href="/home">Home</a></li>
-		<li><a href="/donate">Donate</li>
-		<li><a href="/FAQ">FAQ</a></li>
-		<li><a href="/contact">Contact</a></li>
-	</ul>
-</div>
-<!--End Footer-->
-</body>
+    <body>
+        <div class="container">
+            <div class="row"><!-- header -->
+                <div class="span6" id="logo">
+                    <div id="logo1">Sp</div><div id="logo2">ork</div>
+                        <div id="tagline">Where a good meal goes a long way</div>
+                </div><!-- end of "logo" -- >
+            
+                <div class="span6" id="navbar">
+                    <img src="../media/images/icons/facebook.png">
+                    <a href="http://twitter.com/SporkATL"><img src="../media/images/icons/twitter.png"></a>
+                    <img src="../media/images/icons/tumblr.png">
+                    <img src="../media/images/icons/youtube.png">
+                    <img src="../media/images/icons/flickr.png">
+                    <br />
+                    <ul>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/FAQ">FAQ</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div><!-- end of "navbar" -->
+            </div><!-- end of header row -->
+        
+            <div class="row"><!-- top section -->
+                <div class="span16 topSection">
+                    <img src="../media/images/header.jpg">
+                </div>
+            </div><!-- end of top section row -->
+            
+            <div class="row"><!-- content -->
+                <div class="span-two-thirds" id="content">
+                    <p>Thanks for checking out Spork! We are working hard right now building a platform to help combat hunger through food recovery. Join out mailing list to stay updated with new developments!</p>
+                </div>
+        
+                <div class="span-one-third"><!-- tweet widget -->
+                    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                    <script>
+                    new TWTR.Widget({
+                      version: 2,
+                      type: 'profile',
+                      rpp: 4,
+                      interval: 30000,
+                      width: 320,
+                      height: 340,
+                      theme: {
+                        shell: {
+                          background: '#0b7e88',
+                          color: '#ffffff'
+                        },
+                        tweets: {
+                          background: '#ffffff',
+                          color: '#000000',
+                          links: '#ff6600'
+                        }
+                      },
+                      features: {
+                        scrollbar: false,
+                        loop: false,
+                        live: false,
+                        behavior: 'all'
+                      }
+                    }).render().setUser('rhokatl').start();
+                    </script>
+                </div><!-- end of tweet widget -->
+            </div><!-- end of content row -->
+        
+            <div class="row"></div><!-- spacer -->
+
+            <div class="grid_12" id="footer">
+                <ul>
+                    <li>Copyright &copy; 2011 Spork</li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="/FAQ">FAQ</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div><!-- end of "footer" -->
+        </div><!-- end of "container" -->
+    </body>
 </html>

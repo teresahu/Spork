@@ -3,12 +3,13 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 
 from sporkapp.models import Donation
-from sporkapp.forms import NewDonationForm
+from sporkapp.forms import NewDonationForm, SubscribeForm
 
 # Create your views here.
 def home(request):
     donations = Donation.objects.all()
-    return render_to_response('home.html', {'donations' : donations})
+    subscribe_form = SubscribeForm()
+    return render_to_response('home.html', {'donations' : donations, 'subscribe_form' : subscribe_form})
 
 def donation(request, donation_id):
     donation = Donation.objects.get(pk=donation_id)

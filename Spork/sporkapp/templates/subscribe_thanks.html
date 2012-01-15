@@ -1,0 +1,43 @@
+{% extends "subscribe.html" %}
+
+
+{% block main %}
+    <div class="row"><!-- top section -->
+        <div class="span-two-thirds">
+            <!-- <img src="../media/images/header.jpg"> -->
+            <h1 id="subscribeHeadline">Join our mailing list!</h1>
+            <p id="subscribeContent">Thanks for signing up! We'll keep in touch.</p>
+        </div>
+        <div class="span-one-third"><!-- tweet widget -->
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 4,
+              interval: 30000,
+              width: 300,
+              height: 340,
+              theme: {
+                shell: {
+                  background: '#0b7e88',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#ffffff',
+                  color: '#000000',
+                  links: '#ff6600'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+              }
+            }).render().setUser('rhokatl').start();
+            </script>
+        </div><!-- end of tweet widget -->
+    </div><!-- end of content row -->
+{% endblock %}
+

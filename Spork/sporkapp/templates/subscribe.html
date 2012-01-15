@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block logo %}
+    <a href="/"><div id="logo1">Sp</div><div id="logo2">ork</div></a>
+    <div id="tagline">A good meal goes a long way</div>
+{% endblock %}
+
+{% block nav %}
+    <!--<img src="../media/images/icons/facebook.png">
+    <a href="http://twitter.com/SporkATL"><img src="../media/images/icons/twitter.png"></a>
+    <img src="../media/images/icons/tumblr.png">
+    <img src="../media/images/icons/youtube.png">
+    <img src="../media/images/icons/flickr.png">
+    <br />-->
+    <ul>
+        <li><a href="/donate">Login</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/login">Sign Up</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <div class="row"><!-- top section -->
+        <div class="span-two-thirds">
+            <!-- <img src="../media/images/header.jpg"> -->
+            <h1 id="subscribeHeadline">Join our mailing list!</h1>
+            <p id="subscribeContent">The team at Spork is hard at work. Sign up and we'll keep you up to date with new developments.</p>
+            <form id="subscribeForm" action="/subscribe/" method="post">{% csrf_token %}
+                <div class="clearfix">
+                    <label for="id_email">Email Address:</label>
+                    <div class="input">
+                        {{ subscribe_form.email_address }}
+                        <input type="submit" class="btn info" value="Subscribe" />
+                    </div>
+                </div>
+            </form>
+            <p id="subscribeDisclaimer">We take your privacy very seriously. We will not sell or distribute your email address to third parties or send you emails not related to Spork. We hate spam too.</p>
+        </div>
+        <div class="span-one-third"><!-- tweet widget -->
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 4,
+              interval: 30000,
+              width: 300,
+              height: 340,
+              theme: {
+                shell: {
+                  background: '#0b7e88',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#ffffff',
+                  color: '#000000',
+                  links: '#ff6600'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+              }
+            }).render().setUser('rhokatl').start();
+            </script>
+        </div><!-- end of tweet widget -->
+    </div><!-- end of content row -->
+{% endblock %}
+
+{% block footer %}
+    <div class="row">
+        <ul>
+            <li>Copyright &copy; 2011 Spork</li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/donate">Donate</a></li>
+            <li><a href="/FAQ">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div><!-- end of row -->
+{% endblock %}

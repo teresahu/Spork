@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}Spork - Welcome{% endblock %}</title>
+        
+        <meta name="description" content="Welcome">
+        <meta name="author" content="Spork">
+        <meta name="viewport" 	content="width=device-width,initial-scale=1">
+        
+
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Asul:400,700' rel='stylesheet' type='text/css'>
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" media="all" href="/media/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/media/css/landing.css" />
+    </head>
+    <body>
+        <div id="header" class="container">
+            <div class="row"><!-- header -->
+                <div class="span6" id="logo">
+                    {% block logo %}
+                    {% endblock %}
+                </div><!-- end of "logo" -->
+                <div class="span10" id="navbar">
+                    {% block nav %}
+                    {% endblock %}
+                </div><!-- end of "navbar" -->
+            </div><!-- end of header row -->
+        </div><!-- end of "header" -->
+        <div id="main" class="container">
+            {% block main %}
+            {% endblock %}
+        </div><!-- end of "main" -->
+        <div id="footer" class="container">
+            {% block footer %}
+            {% endblock %}
+        </div><!-- end of "footer" -->
+    </body>
+</html>

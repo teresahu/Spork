@@ -15,10 +15,10 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
+    url(r'^$', 'sporkapp.views.subscribe'),
     url(r'^home/$', 'sporkapp.views.home'),
+    url(r'^subscribe/$', 'sporkapp.views.subscribe'),
     url(r'^donations/$', 'sporkapp.views.donations'),
-    url(r'^donation/d+/$', 'sporkapp.views.donation_details'),
-    url(r'^donate', 'sporkapp.views.create_donation'),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root' : '/home/manvsmachine/Spork/Spork/sporkapp/media/'}),
     url(r'^admin/$', include(admin.site.urls))
 )
